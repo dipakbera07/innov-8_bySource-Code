@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Track Your Order</title>
+  <link rel="stylesheet" href="tack.css">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  
+  <div class="container">
+    <h1>Track Your Order</h1>
+    <p>Enter your order details below to track your shipment.</p>
+    
+    <form class="track-order-form">
+      <label for="order-id">Order ID:</label>
+      <input type="text" id="order-id" name="order-id" placeholder="Enter your Order ID" required>
+
+      <label for="email">Email Address:</label>
+      <input type="email" id="email" name="email" placeholder="Enter your Email" required>
+
+      <button type="submit">Track Order</button>
+    </form>
+    
+    <div class="order-status">
+      <h2>Order Status</h2>
+      <p>Once you enter your Order ID and Email, you’ll see the current status of your order here.</p>
+    </div>
+  </div>
+</body>
+</html>

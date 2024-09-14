@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Signup Page</title>
+    <link rel="stylesheet" href="styles-3.css">
+</head>
+<body>
+    <div class="container">
+        <div class="form-box">
+            <h2>Create account</h2>
+            <form action="connect.php" method="POST">
+                <label for="signup-name">Your name</label>
+                <input type="text" id="signup-name" name="name" required>
+    
+                <label for="signup-email">Email</label>
+                <input type="email" id="signup-email" name="email" required>
+    
+                <label for="signup-password">Password</label>
+                <input type="password" id="signup-password" name="password" minlength="6" required>
+                <small>Password must be at least 6 characters</small>
+    
+                <label for="signup-password-confirm">Re-enter password</label>
+                <input type="password" id="signup-password-confirm" name="password_confirm" required>
+    
+                <button type="submit" value="submit">Create your account</button>
+    
+                <p>By creating an account, you agree to our <a href="condition.html">Conditions of Use</a> and <a href="privacy.html">Privacy Notice</a>.</p>
+            </form>
+        </div>
+    </div>
+</body>
+</html>

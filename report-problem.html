@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Report a Problem | E-Shop Plus</title>
+    <link rel="stylesheet" href="styless.css">
+    <link rel="stylesheet" href="style.css">
+    
+</head>
+<body>
+    <header class="section-navbar">
+        <section class="top_txt">
+          <div class="head container">
+            <div class="head-txt">
+              <p>Free shoping, 30 days return or refund gurantee</p>
+            </div>
+            <div class="sign_in_up ">
+              <a href="sigin.html" id="sign-111" type="">SIGN IN</a>
+              <a href="signup.html">SIGN UP</a>
+            </div>
+          </div>
+        </section>
+        <div class="container">
+          <div class="navbar-brand">
+            <a href="index.html">
+              <img src="./public/images/logo.png" alt="thapa eCommerce logo" class="logo" width="80%" height="auto" />
+            </a>
+          </div>
+    
+          <nav class="navbar">
+            <ul>
+              <li class="nav-item">
+                <a href="/" class="nav-link">Home</a>
+              </li>
+              <li class="nav-item">
+                <a href="condition.html" class="nav-link">privacy</a>
+              </li>
+              <li class="nav-item">
+                <a href="#products-1" class="nav-link">products</a>
+              </li>
+              <li class="nav-item">
+                <a href="help.html" class="nav-link">help</a>
+              </li>
+              <li class="nav-item">
+                <a href="account.html" class="nav-link">acounts</a>
+              </li>
+              <li class="nav-item">
+                <a
+                  href="addToCart.html"
+                  class="nav-link add-to-cart-button"
+                  id="cartValue"
+                >
+                  <i class="fa-solid fa-cart-shopping"> 0 </i>
+                </a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+      </header>
+
+    <div class="container">
+        <h2>Report a Problem</h2>
+        <p>If you are facing any issues with your order or our services, please let us know. We are here to help!</p>
+
+        <form action="/submit-issue" method="post" class="report-form">
+            <label for="orderNumber">Order Number (if applicable):</label>
+            <input type="text" id="orderNumber" name="orderNumber" placeholder="Enter your order number...">
+
+            <label for="problemType">Select Issue Type:</label>
+            <select id="problemType" name="problemType">
+                <option value="order_issue">Issue with my order</option>
+                <option value="product_issue">Problem with the product</option>
+                <option value="payment_issue">Payment issue</option>
+                <option value="account_issue">Account or login issue</option>
+                <option value="other">Other</option>
+            </select>
+
+            <label for="description">Describe the Problem:</label>
+            <textarea id="description" name="description" rows="6" placeholder="Provide a detailed description of the issue..."></textarea>
+
+            <label for="upload">Attach Screenshot (optional):</label>
+            <input type="file" id="upload" name="upload">
+
+            <label for="email">Your Email:</label>
+            <input type="email" id="email" name="email" placeholder="Enter your email address...">
+
+            <button type="submit">Submit Report</button>
+        </form>
+    </div>
+
+    <footer>
+        
+        <p>&copy; 2024 E-Shop Plus. Need further assistance? <a href="#">Contact Support</a></p>
+    </footer>
+</body>
+</html>

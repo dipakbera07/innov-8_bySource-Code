@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Request Return Form</title>
+    <link rel="stylesheet" href="request_return.css">
+</head>
+<body>
+    <div class="container">
+        <h2>Product Return Request</h2>
+        <form action="/submit-return" method="POST">
+            <label for="order-number">Order Number:</label>
+            <input type="text" id="order-number" name="order-number" required placeholder="Enter your order number">
+
+            <label for="product-name">Product Name:</label>
+            <input type="text" id="product-name" name="product-name" required placeholder="Enter the product name">
+
+            <label for="reason">Reason for Return:</label>
+            <select id="reason" name="reason" required>
+                <option value="">Select a reason</option>
+                <option value="damaged">Damaged</option>
+                <option value="wrong-item">Wrong Item Delivered</option>
+                <option value="not-satisfied">Not Satisfied</option>
+                <option value="other">Other</option>
+            </select>
+
+            <label for="description">Additional Information:</label>
+            <textarea id="description" name="description" rows="4" placeholder="Provide additional details if necessary"></textarea>
+
+            <label for="return-method">Preferred Return Method:</label>
+            <select id="return-method" name="return-method" required>
+                <option value="pickup">Pickup</option>
+                <option value="drop-off">Drop-off at nearest store</option>
+            </select>
+
+            <button type="submit">Submit Return Request</button>
+        </form>
+    </div>
+</body>
+</html>
